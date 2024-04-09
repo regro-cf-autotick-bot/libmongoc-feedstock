@@ -37,3 +37,5 @@ zip_keys:
   - cdt_name
 zlib:
 - '1.2'
+zstd:
+- '1.5'
