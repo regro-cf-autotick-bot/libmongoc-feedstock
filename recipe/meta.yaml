@@ -29,6 +29,7 @@ requirements:
     - zlib
     - openssl
     - cyrus-sasl
+    - icu
 
 test:
   commands:
