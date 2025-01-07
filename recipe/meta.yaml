@@ -1,5 +1,5 @@
 {% set name = "libmongoc" %}
-{% set version = "1.23.2" %}
+{% set version = "1.29.2" %}
 
 package:
   name: {{ name }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/mongodb/mongo-c-driver/releases/download/{{ version }}/mongo-c-driver-{{ version }}.tar.gz
-  sha256: 123c358827eea07cd76a31c40281bb1c81b6744f6587c96d0cf217be8b1234e3
+  sha256: b5c33912c365e108d1fb1a03586364bbadc90e568e5719b290e15031c6e5ad90
   patches:
     - fix-static-dep.patch
 
 build:
-  number: 2
+  number: 0
   run_exports:
     - {{ pin_subpackage(name, max_pin='x.x') }}
 
